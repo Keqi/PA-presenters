@@ -1,0 +1,10 @@
+<% present(user) do |p| %>
+  <tr>
+    <td><%= p.name %></td>
+    <td><%= p.surname %></td>
+    <td><%= p.age %></td>
+    <td><%= p.user_link %></td>
+    <td><%= p.remove_link %></td>
+    <td><%= p.admin? %> </td>
+  </tr>
+<% end %>

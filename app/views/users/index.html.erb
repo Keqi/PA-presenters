@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Surname</td>
+    <td>Age</td>
+    <td></td>
+    <td></td>
+    <td>Admin?</td>
+  </tr>
+
+  <% @users.each do |user| %>
+    <%= render partial: 'user', locals: {user: user} %>
+  <% end %>
+
+</table>
